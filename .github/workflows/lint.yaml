@@ -41,6 +41,7 @@ jobs:
             --error-exitcode=1 \
             --std=c99 \
             --inline-suppr \
+            --suppress=missingIncludeSystem \
             -I include \
             src
 
