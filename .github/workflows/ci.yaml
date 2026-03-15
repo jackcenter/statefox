@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: build
+          key: ${{ runner.os }}-cmake-${{ hashFiles('**/CMakeLists.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-cmake-
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update 
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            ninja-build
+
+      - name: Configure
+        run: cmake -B build -G Ninja
+
+      - name: Build
+        run: |
+          cmake --build build
+
+      - name: Run Tests
+        run: |
+          ctest --test-dir build --output-on-failure

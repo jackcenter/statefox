@@ -1,3 +1,6 @@
+[![CI](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml)
+[![Lint](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml)
+
 # StateFox
 **C library for lightweight, event-driven state machines**
 

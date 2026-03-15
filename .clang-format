@@ -1,0 +1,25 @@
+# Base style
+BasedOnStyle: Google
+
+# Override line length to 100
+ColumnLimit: 100
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Brace and spacing settings
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+SpacesBeforeTrailingComments: 1
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# Other formatting tweaks
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackParameters: true
