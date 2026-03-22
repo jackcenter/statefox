@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@PROJECT_NAME@ Documentation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>@PROJECT_NAME@</h1>
+    <p>@PROJECT_DESC@</p>
+</header>
+
+<main>
+
+    <h2>Documentation Modules</h2>
+    <div class="modules">
+        @DOC_MODULES@
+    </div>
+
+    <h2>Project Links</h2>
+    <div class="modules">
+        <div class="card"><a href="@GITHUB_REPO_URL@">GitHub Repository</a></div>
+        <div class="card"><a href="../README.md">Project README</a></div>
+    </div>
+
+</main>
+
+<footer>
+    &copy; @YEAR@ @PROJECT_NAME@. Generated with Doxygen.
+</footer>
+
+</body>
+</html>
