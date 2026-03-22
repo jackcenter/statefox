@@ -1,5 +1,6 @@
 [![CI](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml)
 [![Lint](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml)
+[![Docs](https://github.com/jackcenter/statefox/actions/workflows/docs.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/docs.yaml)
 
 # <img src="docs/logo.svg" height="32" align="center"/> StateFox
 **C library for lightweight, event-driven state machines**
@@ -8,6 +9,10 @@ StateFox is a small, header-and-source C library for building Finite State Machi
 
 - Easy to register state-event transitions
 - Supports event payloads
+
+## Documentation
+
+Documentation can be found at the [Landing Page](https://jackcenter.github.io/statefox/)
 
 ## License
 

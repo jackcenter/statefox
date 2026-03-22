@@ -1,0 +1,7 @@
+PROJECT_NAME           = "@PROJECT_NAME@"
+INPUT                  = "@INPUT@"
+OUTPUT_DIRECTORY       = "@OUTPUT_DIRECTORY@"
+STRIP_FROM_PATH        = "@STRIP_FROM_PATH@"
+GENERATE_LATEX         = NO
+RECURSIVE              = YES
+EXTRACT_ALL            = YES

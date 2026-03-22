@@ -33,7 +33,7 @@ jobs:
             ninja-build
 
       - name: Configure
-        run: cmake -B build -G Ninja
+        run: cmake -B build -G Ninja -DBUILD_DOXYGEN=OFF
 
       - name: Build
         run: |

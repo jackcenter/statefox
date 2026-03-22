@@ -26,7 +26,11 @@ jobs:
             cppcheck
 
       - name: Configure (generate compile_commands.json)
-        run: cmake -B build -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+        run: >
+          cmake -B build 
+          -G Ninja 
+          -DCMAKE_EXPORT_COMPILE_COMMANDS=ON 
+          -G Ninja -DBUILD_DOXYGEN=OFF
 
       - name: Run clang-format
         run: |

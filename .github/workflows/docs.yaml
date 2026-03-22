@@ -1,0 +1,36 @@
+name: Docs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update 
+          sudo apt-get install -y doxygen graphviz cmake ninja-build
+
+      - name: Configure
+        run: cmake -B build -G Ninja -DBUILD_DOXYGEN=ON
+
+      - name: Build
+        run: |
+          cmake --build build --target docs
+
+      - name: Deploy docs to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: build/docs/
