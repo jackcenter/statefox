@@ -1,7 +1,7 @@
 [![CI](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/ci.yaml)
 [![Lint](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml/badge.svg)](https://github.com/jackcenter/statefox/actions/workflows/lint.yaml)
 
-# StateFox
+# <img src="docs/logo.svg" height="32" align="center"/> StateFox
 **C library for lightweight, event-driven state machines**
 
 StateFox is a small, header-and-source C library for building Finite State Machines (FSMs). It’s fast, simple, and flexible:
