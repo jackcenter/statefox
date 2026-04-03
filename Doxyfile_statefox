@@ -1,0 +1,7 @@
+PROJECT_NAME           = "StateFox"
+INPUT                  = "/home/runner/work/statefox/statefox/include"
+OUTPUT_DIRECTORY       = "/home/runner/work/statefox/statefox/build/docs/statefox"
+STRIP_FROM_PATH        = "/home/runner/work/statefox/statefox/docs"
+GENERATE_LATEX         = NO
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
