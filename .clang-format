@@ -5,14 +5,14 @@ BasedOnStyle: Google
 ColumnLimit: 100
 
 # Indentation
-IndentWidth: 4
-TabWidth: 4
+IndentWidth: 2
+TabWidth: 2
 UseTab: Never
 
 # Brace and spacing settings
 BreakBeforeBraces: Attach
 AllowShortFunctionsOnASingleLine: Empty
-SpacesBeforeTrailingComments: 1
+SpacesBeforeTrailingComments: 2
 DerivePointerAlignment: false
 PointerAlignment: Left
 
