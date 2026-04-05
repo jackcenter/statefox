@@ -11,6 +11,7 @@ option(BUILD_DOXYGEN "Build doxygen" ON)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_library(statefox
+    src/sf_status.c
     src/statefox.c
 )
 

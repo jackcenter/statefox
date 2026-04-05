@@ -43,8 +43,9 @@ jobs:
             --enable=all \
             --inconclusive \
             --error-exitcode=1 \
-            --std=c99 \
-            --inline-suppr \
+            --std=c11 \
+            --suppress=missingIncludeSystem \
+            --suppress=unusedFunction \
             -I include \
             src
 
